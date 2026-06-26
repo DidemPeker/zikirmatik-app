@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Zikirmatik</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <meta name="theme-color" content="#111111" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Zikir" />
+</head>
+
+<body>
+    <main class="app">
+        <h1>Zikirmatik</h1>
+
+        <section class="card">
+            <p class="label">Current zikir</p>
+            <h2 id="dhikrName">SubhanAllah</h2>
+
+            <div class="counter">
+                <span id="count">0</span>
+                <span class="target">/ <span id="target">33</span></span>
+            </div>
+
+            <button id="countButton" class="main-button">+1</button>
+
+            <div class="actions">
+                <button id="resetButton">Reset</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
