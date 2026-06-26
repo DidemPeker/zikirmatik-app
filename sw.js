@@ -1,9 +1,9 @@
-const CACHE_NAME = "zikirmatik-v3";
+const CACHE_NAME = "zikirmatik-v4";
 
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
-  "./style.css",
+  "./style.css?v=4",
   "./app.js",
   "./manifest.webmanifest"
 ];
