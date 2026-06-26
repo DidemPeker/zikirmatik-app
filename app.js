@@ -19,31 +19,28 @@ function updateScreen() {
   localStorage.setItem("dhikrName", dhikrName);
 }
 
-countButton.addEventListener("click", () => {
-  count++;
-
-  if (count > target) {
-    count = target;
-  }
-
-  updateScreen();
-
+function flashCountButton() {
   countButton.classList.remove("counted");
   void countButton.offsetWidth;
   countButton.classList.add("counted");
 
   setTimeout(() => {
     countButton.classList.remove("counted");
-  }, 220);
+  }, 500);
+}
+
+countButton.addEventListener("click", () => {
+  if (count < target) {
+    count++;
+  }
+
+  updateScreen();
+  flashCountButton();
 });
 
 resetButton.addEventListener("click", () => {
   count = 0;
   updateScreen();
 });
-
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
-}
 
 updateScreen();

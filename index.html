@@ -7,15 +7,48 @@
 
     <title>Zikirmatik</title>
 
-    <link rel="stylesheet" href="style.css?v=7" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="style.css?v=9" />
 
-    <meta name="theme-color" content="#111111" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#0b2248" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Zikir" />
 </head>
 
 <body>
+    <div class="background-decor" aria-hidden="true">
+        <span class="moon">☾</span>
+        <span class="star star-1">✦</span>
+        <span class="star star-2">✦</span>
+        <span class="star star-3">✦</span>
+        <span class="star star-4">✦</span>
+        <span class="dot dot-1"></span>
+        <span class="dot dot-2"></span>
+        <span class="dot dot-3"></span>
+
+        <svg class="cat cat-left" viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 92 C38 62, 58 46, 86 44 C97 30, 108 20, 116 38 C126 20, 138 28, 145 44 C173 47, 188 64, 190 91"
+                stroke="rgba(255,255,255,0.78)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M68 93 C70 104, 72 108, 76 112" stroke="rgba(255,255,255,0.78)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M148 93 C150 104, 152 108, 156 112" stroke="rgba(255,255,255,0.78)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M192 90 C208 84, 210 70, 198 58" stroke="rgba(255,255,255,0.78)" stroke-width="4"
+                stroke-linecap="round" />
+        </svg>
+
+        <svg class="cat cat-right" viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 92 C38 62, 58 46, 86 44 C97 30, 108 20, 116 38 C126 20, 138 28, 145 44 C173 47, 188 64, 190 91"
+                stroke="rgba(20,25,35,0.85)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M68 93 C70 104, 72 108, 76 112" stroke="rgba(20,25,35,0.85)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M148 93 C150 104, 152 108, 156 112" stroke="rgba(20,25,35,0.85)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M192 90 C208 84, 210 70, 198 58" stroke="rgba(20,25,35,0.85)" stroke-width="4"
+                stroke-linecap="round" />
+        </svg>
+    </div>
+
     <main class="app">
         <h1>Zikirmatik</h1>
 
@@ -28,9 +61,9 @@
                 <span class="target">/ <span id="target">33</span></span>
             </div>
 
-        <button id="countButton" class="main-button" aria-label="Count one zikir">
-            <span class="power-symbol">⏻</span>
-        </button>
+            <button id="countButton" class="main-button" aria-label="Count one zikir">
+                <span class="power-symbol">⏻</span>
+            </button>
 
             <div class="actions">
                 <button id="resetButton">Reset</button>
@@ -38,7 +71,7 @@
         </section>
     </main>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=9"></script>
 </body>
 
 </html>
