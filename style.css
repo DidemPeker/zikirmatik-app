@@ -21,126 +21,103 @@ body {
     color: white;
 }
 
+/* Background decoration wrapper */
 .background-decor {
     position: fixed;
     inset: 0;
     pointer-events: none;
     z-index: 0;
+    overflow: hidden;
 }
 
+/* Gold crescent moon */
 .moon {
     position: absolute;
-    top: 24px;
-    right: 26px;
-    font-size: 170px;
+    top: 28px;
+    right: 28px;
+    font-size: 150px;
     line-height: 1;
-    color: rgba(255, 214, 120, 0.26);
+    color: rgba(255, 214, 120, 0.28);
     text-shadow:
         0 0 24px rgba(255, 214, 120, 0.12),
         0 0 55px rgba(255, 214, 120, 0.08);
 }
 
+/* Stars */
 .star {
     position: absolute;
-    color: rgba(255, 220, 150, 0.24);
+    color: rgba(255, 220, 150, 0.26);
     text-shadow: 0 0 18px rgba(255, 220, 150, 0.10);
 }
 
 .star-1 {
-    top: 118px;
-    left: 86px;
-    font-size: 40px;
+    top: 120px;
+    left: 82px;
+    font-size: 42px;
 }
 
 .star-2 {
-    top: 300px;
-    right: 105px;
-    font-size: 30px;
+    top: 310px;
+    right: 92px;
+    font-size: 34px;
 }
 
 .star-3 {
-    bottom: 72px;
-    left: 72px;
+    bottom: 86px;
+    left: 74px;
     font-size: 86px;
     color: rgba(255, 220, 150, 0.14);
 }
 
+.star-4 {
+    top: 210px;
+    left: 210px;
+    font-size: 16px;
+    color: rgba(255, 220, 150, 0.14);
+}
 
+/* Small dots */
 .dot {
     position: absolute;
     width: 7px;
     height: 7px;
     border-radius: 999px;
-    background: rgba(255, 232, 180, 0.18);
+    background: rgba(255, 232, 180, 0.20);
 }
 
 .dot-1 {
-    top: 126px;
+    top: 128px;
     right: 230px;
 }
 
 .dot-2 {
-    top: 360px;
-    left: 100px;
+    top: 362px;
+    left: 104px;
 }
 
 .dot-3 {
-    bottom: 108px;
-    left: 420px;
+    bottom: 112px;
+    left: 424px;
 }
 
+/* One line-art cat reaching toward the moon */
 .cat-reaching {
     position: absolute;
-    right: 90px;
-    top: 110px;
-    width: 300px;
+    top: 118px;
+    right: 70px;
+    width: 210px;
     height: auto;
-    opacity: 0.88;
+    opacity: 0.55;
 }
 
 .cat-line {
-    stroke: rgba(255, 255, 255, 0.80);
-    stroke-width: 4.5;
+    stroke: rgba(255, 255, 255, 0.72);
+    stroke-width: 5;
     stroke-linecap: round;
     stroke-linejoin: round;
 }
 
-@media (max-width: 380px) {
-    .moon {
-        font-size: 126px;
-        top: 24px;
-        right: 12px;
-    }
-
-    .star-1 {
-        top: 96px;
-        left: 28px;
-        font-size: 32px;
-    }
-
-    .star-2 {
-        top: 245px;
-        right: 28px;
-        font-size: 24px;
-    }
-
-    .star-3 {
-        bottom: 62px;
-        left: 20px;
-        font-size: 62px;
-    }
-
-    .cat-reaching {
-        right: 18px;
-        top: 145px;
-        width: 200px;
-    }
-}
-
-
-
-
-
+/* Main app layout */
 .app {
     position: relative;
     z-index: 1;
@@ -290,32 +267,58 @@ button {
     background: rgba(15, 35, 69, 0.88);
 }
 
+/* Small iPhone screens */
 @media (max-width: 380px) {
     .moon {
-        font-size: 132px;
-        top: 34px;
-        right: 16px;
+        font-size: 118px;
+        top: 24px;
+        right: 10px;
     }
 
     .star-1 {
-        top: 108px;
-        left: 34px;
+        top: 100px;
+        left: 28px;
+        font-size: 32px;
     }
 
     .star-2 {
-        top: 265px;
-        right: 34px;
+        top: 250px;
+        right: 28px;
+        font-size: 24px;
     }
 
     .star-3 {
-        bottom: 82px;
+        bottom: 70px;
         left: 22px;
-        font-size: 70px;
+        font-size: 62px;
     }
 
-    .cat {
-        width: 92px;
-        bottom: 10px;
+    .star-4 {
+        top: 170px;
+        left: 150px;
+        font-size: 14px;
+    }
+
+    .dot-1 {
+        top: 118px;
+        right: 170px;
+    }
+
+    .dot-2 {
+        top: 330px;
+        left: 72px;
+    }
+
+    .dot-3 {
+        bottom: 100px;
+        left: 250px;
+    }
+
+    .cat-reaching {
+        top: 112px;
+        right: 36px;
+        width: 135px;
+        opacity: 0.48;
     }
 
     h1 {
