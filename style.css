@@ -97,18 +97,32 @@ body {
 
 .cat {
     position: absolute;
-    width: 130px;
+    width: 120px;
     height: auto;
-    bottom: 16px;
+    bottom: 18px;
     opacity: 0.9;
 }
 
 .cat-left {
-    left: 18px;
+    left: 24px;
 }
 
 .cat-right {
-    right: 18px;
+    right: 24px;
+}
+
+.cat-line {
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.cat-white {
+    stroke: rgba(255, 255, 255, 0.72);
+}
+
+.cat-gold {
+    stroke: rgba(255, 220, 150, 0.72);
 }
 
 .app {
