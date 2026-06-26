@@ -7,7 +7,7 @@
 
     <title>Zikirmatik</title>
 
-    <link rel="stylesheet" href="style.css?v=14" />
+    <link rel="stylesheet" href="style.css?v=15" />
 
     <link rel="manifest" href="manifest.webmanifest" />
     <meta name="theme-color" content="#0b2248" />
@@ -57,21 +57,30 @@
         </svg>
     </div> -->
 
+    
     <main class="app">
         <h1>Zikirmatik</h1>
-
+    
+        <img src="assets/cat-overlay.png" alt="" class="cat-overlay" />
+    
         <section class="card">
             <p class="label">Current zikir</p>
             <h2 id="dhikrName">SubhanAllah</h2>
-
+    
             <div class="counter">
                 <span id="count">0</span>
                 <span class="target">/ <span id="target">33</span></span>
             </div>
-
+    
             <button id="countButton" class="main-button" aria-label="Count one zikir">
                 <span class="power-symbol">⏻</span>
             </button>
+    
+            <div class="actions">
+                <button id="resetButton">Reset</button>
+            </div>
+        </section>
+    </main>
 
             <div class="actions">
                 <button id="resetButton">Reset</button>
@@ -79,7 +88,7 @@
         </section>
     </main>
 
-    <script src="app.js?v=14"></script>
+    <script src="app.js?v=15"></script>
 </body>
 
 </html>
