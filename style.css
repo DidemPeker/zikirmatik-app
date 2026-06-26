@@ -30,13 +30,13 @@ body {
 
 .moon {
     position: absolute;
-    top: 28px;
-    right: 34px;
+    top: 24px;
+    right: 26px;
     font-size: 170px;
     line-height: 1;
-    color: rgba(255, 214, 120, 0.22);
+    color: rgba(255, 214, 120, 0.26);
     text-shadow:
-        0 0 24px rgba(255, 214, 120, 0.10),
+        0 0 24px rgba(255, 214, 120, 0.12),
         0 0 55px rgba(255, 214, 120, 0.08);
 }
 
@@ -47,30 +47,24 @@ body {
 }
 
 .star-1 {
-    top: 120px;
-    left: 82px;
-    font-size: 42px;
+    top: 118px;
+    left: 86px;
+    font-size: 40px;
 }
 
 .star-2 {
-    top: 305px;
-    right: 92px;
-    font-size: 34px;
+    top: 300px;
+    right: 105px;
+    font-size: 30px;
 }
 
 .star-3 {
-    bottom: 92px;
-    left: 74px;
-    font-size: 92px;
+    bottom: 72px;
+    left: 72px;
+    font-size: 86px;
     color: rgba(255, 220, 150, 0.14);
 }
 
-.star-4 {
-    top: 210px;
-    left: 210px;
-    font-size: 16px;
-    color: rgba(255, 220, 150, 0.14);
-}
 
 .dot {
     position: absolute;
@@ -81,49 +75,71 @@ body {
 }
 
 .dot-1 {
-    top: 128px;
-    right: 236px;
+    top: 126px;
+    right: 230px;
 }
 
 .dot-2 {
-    top: 362px;
-    left: 104px;
+    top: 360px;
+    left: 100px;
 }
 
 .dot-3 {
-    bottom: 112px;
-    left: 424px;
+    bottom: 108px;
+    left: 420px;
 }
 
-.cat {
+.cat-reaching {
     position: absolute;
-    width: 120px;
+    right: 90px;
+    top: 110px;
+    width: 300px;
     height: auto;
-    bottom: 18px;
-    opacity: 0.9;
-}
-
-.cat-left {
-    left: 24px;
-}
-
-.cat-right {
-    right: 24px;
+    opacity: 0.88;
 }
 
 .cat-line {
-    stroke-width: 5;
+    stroke: rgba(255, 255, 255, 0.80);
+    stroke-width: 4.5;
     stroke-linecap: round;
     stroke-linejoin: round;
 }
 
-.cat-white {
-    stroke: rgba(255, 255, 255, 0.72);
+@media (max-width: 380px) {
+    .moon {
+        font-size: 126px;
+        top: 24px;
+        right: 12px;
+    }
+
+    .star-1 {
+        top: 96px;
+        left: 28px;
+        font-size: 32px;
+    }
+
+    .star-2 {
+        top: 245px;
+        right: 28px;
+        font-size: 24px;
+    }
+
+    .star-3 {
+        bottom: 62px;
+        left: 20px;
+        font-size: 62px;
+    }
+
+    .cat-reaching {
+        right: 18px;
+        top: 145px;
+        width: 200px;
+    }
 }
 
-.cat-gold {
-    stroke: rgba(255, 220, 150, 0.72);
-}
+
+
+
 
 .app {
     position: relative;
