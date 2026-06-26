@@ -17,7 +17,7 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background-image:
         linear-gradient(rgba(3, 12, 32, 0.18), rgba(3, 12, 32, 0.35)),
-        url("assets/background.png");
+        url("assets/cat-image.png");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
