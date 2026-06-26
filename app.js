@@ -27,6 +27,14 @@ countButton.addEventListener("click", () => {
   }
 
   updateScreen();
+
+  countButton.classList.remove("counted");
+  void countButton.offsetWidth;
+  countButton.classList.add("counted");
+
+  setTimeout(() => {
+    countButton.classList.remove("counted");
+  }, 220);
 });
 
 resetButton.addEventListener("click", () => {
